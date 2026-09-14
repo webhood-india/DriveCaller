@@ -1,0 +1,11 @@
+<resources>
+    <style name="DialKey" parent="@android:style/Widget.Material.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/dc_text</item>
+        <item name="android:backgroundTint">@color/dc_surface_2</item>
+    </style>
+</resources>

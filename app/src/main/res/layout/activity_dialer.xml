@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dc_background"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/dialerTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone"
+        android:textColor="@color/dc_text"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/numberDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:gravity="center_vertical|end"
+        android:padding="8dp"
+        android:textColor="@color/dc_text"
+        android:textSize="30sp"
+        android:singleLine="true"/>
+
+    <GridLayout
+        android:id="@+id/keypad"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="3"
+        android:rowCount="4"
+        android:alignmentMode="alignMargins"
+        android:useDefaultMargins="true">
+
+        <Button android:id="@+id/key1" android:text="1" style="@style/DialKey"/>
+        <Button android:id="@+id/key2" android:text="2" style="@style/DialKey"/>
+        <Button android:id="@+id/key3" android:text="3" style="@style/DialKey"/>
+        <Button android:id="@+id/key4" android:text="4" style="@style/DialKey"/>
+        <Button android:id="@+id/key5" android:text="5" style="@style/DialKey"/>
+        <Button android:id="@+id/key6" android:text="6" style="@style/DialKey"/>
+        <Button android:id="@+id/key7" android:text="7" style="@style/DialKey"/>
+        <Button android:id="@+id/key8" android:text="8" style="@style/DialKey"/>
+        <Button android:id="@+id/key9" android:text="9" style="@style/DialKey"/>
+        <Button android:id="@+id/keyStar" android:text="*" style="@style/DialKey"/>
+        <Button android:id="@+id/key0" android:text="0" style="@style/DialKey"/>
+        <Button android:id="@+id/keyHash" android:text="#" style="@style/DialKey"/>
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/backspaceButton"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="⌫"
+            android:textSize="22sp"/>
+
+        <Button
+            android:id="@+id/callButton"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="12dp"
+            android:layout_weight="2"
+            android:background="@drawable/bg_success_button"
+            android:text="Call"
+            android:textAllCaps="false"
+            android:textColor="@color/dc_text"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>

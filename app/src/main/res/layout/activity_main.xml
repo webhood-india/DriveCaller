@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/dc_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Drive Caller"
+                android:textColor="@color/dc_text"
+                android:textSize="27sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/roleStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_chip"
+                android:text="Phone role needed"
+                android:textColor="@color/dc_muted"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Hands-free calling for the road."
+            android:textColor="@color/dc_muted"
+            android:textSize="15sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/modeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DRIVE MODE"
+                android:textColor="@color/dc_muted"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/modeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Ready to drive"
+                android:textColor="@color/dc_text"
+                android:textSize="26sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/modeDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Turn Drive Mode on when your Bluetooth headset is connected."
+                android:textColor="@color/dc_muted"
+                android:textSize="14sp"/>
+
+            <Switch
+                android:id="@+id/driveToggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="Drive Mode"
+                android:textColor="@color/dc_text"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Connection"
+                android:textColor="@color/dc_text"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/bluetoothStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Checking Bluetooth..."
+                android:textColor="@color/dc_muted"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/serviceStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Drive service is stopped"
+                android:textColor="@color/dc_muted"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Voice controls"
+                android:textColor="@color/dc_text"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Answer:  Accept  •  Answer  •  Pick up\nReject:  Reject  •  Decline  •  Hang up"
+                android:textColor="@color/dc_muted"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/defaultPhoneButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_primary_button"
+            android:text="Set as default Phone app"
+            android:textAllCaps="false"
+            android:textColor="@color/dc_background"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/helperText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Drive Caller needs to be your default Phone app so Android can give it full call-control access. You can switch back to your previous Phone app later in Android Settings."
+            android:textColor="@color/dc_muted"
+            android:textSize="12sp"
+            android:lineSpacingExtra="3dp"/>
+
+    </LinearLayout>
+</ScrollView>
